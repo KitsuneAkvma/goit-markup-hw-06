@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <!--
+  1.Usunąć komentarze niepotrzebne z html (oczywiste)
+  2. Wyrównać sekcje
+  3. flex wrap
+  4. usunąc niepotrzebne divy(team members np)-->
+
+    <!--Metadata tags-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Style sheet import-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--Fonts import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Website tab tags-->
+    <title>WebStudio</title>
+  </head>
+
+  <body>
+    <div class="modal-backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-button" type="button" data-modal-close>
+          <svg class="icon icon-X"><use xlink:href="images/icons.svg#icon-X"></use></svg>
+        </button>
+        <form name="contact-form" autocomplete="on" class="contact-form">
+          <h2>Zostaw swoje dane w formularzu poniżej</h2>
+          <label>
+            Imię
+
+            <input type="text" name="contact-name" class="contact-input contact-name" />
+            <svg class="icon icon-user contact-icon">
+              <use xlink:href="images/icons.svg#icon-user"></use>
+            </svg>
+          </label>
+
+          <label>
+            Telefon
+            <input type="tel" name="contact-phone" class="contact-input contact-phone" />
+            <svg class="icon icon-phone contact-icon">
+              <use xlink:href="images/icons.svg#icon-phone"></use>
+            </svg>
+          </label>
+
+          <label>
+            Email
+            <input
+              type="email"
+              name="contact-email"
+              class="contact-input contact-email"
+            />
+            <svg class="icon icon-phone contact-icon">
+              <use xlink:href="images/icons.svg#icon-envelope-fill"></use>
+            </svg>
+          </label>
+
+          <label>
+            Komentarz
+            <textarea
+              name="contact-comment"
+              placeholder="Wprowadź tekst..."
+              class="contact-input contact-comment"
+            ></textarea>
+          </label>
+          <label class="contact-cbox-label"
+            ><input type="checkbox" name="contact-rules-accept" class="contact-cbox" />
+            <svg class="icon icon-checked">
+              <use xlink:href="images/icons.svg#icon-checked"></use>
+            </svg>
+            <p>
+              Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+              <a href="#">Politykę Prywatności</a>.
+            </p>
+          </label>
+          <input
+            type="submit"
+            name="contact-submit"
+            value="Wyślij"
+            class="contact-submit"
+          />
+        </form>
+      </div>
+    </div>
+    <header class="header">
+      <!--Navbar elements-->
+
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><span>Web</span>Studio</a>
+        </div>
+
+        <nav class="navbar-top">
+          <ul class="nav-buttons flex-center">
+            <li class="nav-button" id="active-nav">
+              <a class="nav-button" href="index.html">Agencja</a>
+            </li>
+            <li class="nav-button">
+              <a class="nav-button" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-button"><a class="nav-button" href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-contacts">
+          <a class="nav-email" href="mail:info@devstudio.com">
+            <svg class="icon icon-envelope">
+              <use href="images/icons.svg#icon-envelope"></use></svg
+            >info@devstudio.com</a
+          >
+          <a class="nav-phone" href="tel:111-111-111"
+            ><svg class="icon icon-smartphone">
+              <use href="images/icons.svg#icon-smartphone"></use></svg
+            >+48 111 111 111</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!--Intro section-->
+
+      <section class="header-mainpage">
+        <div class="overlay-header">
+          <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <button class="call-to-action" type="button" data-modal-open>
+            Zamów usługę
+          </button>
+        </div>
+      </section>
+
+      <section class="feature">
+        <ul>
+          <li class="feature-text">
+            <div class="feature-img">
+              <svg class="icon icon-antenna-1">
+                <use href="images/icons.svg#icon-antenna-1"
+              </svg>
+            </div>
+            <h3>LOREM IPSUM</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
+              Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+          <li class="feature-text">
+            <div class="feature-img">
+              <svg class="icon icon-clock-1">
+                <use href="images/icons.svg#icon-clock-1"></use>
+              </svg>
+            </div>
+            <h3>LOREM IPSUM</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
+              Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+          <li class="feature-text">
+            <div class="feature-img">
+              <svg class="icon icon-diagram-1">
+                <use href="images/icons.svg#icon-diagram-1"></use>
+              </svg>
+            </div>
+            <h3>LOREM IPSUM</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
+              Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+          <li class="feature-text">
+            <div class="feature-img">
+              <svg class="icon icon-astronaut-1">
+                <use href="images/icons.svg#icon-astronaut-1"></use>
+              </svg>
+            </div>
+            <h3>LOREM IPSUM</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
+              Sed non sodales dui. Interdum et malesuada
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="what-do-we-do">
+        <h2>Czym się zajmujemy</h2>
+
+        <ul class="flex-center what-do-we-do-photos">
+          <li>
+            <div class="service flex-center">Aplikacje komputerowe</div>
+            <img
+              src="images/programming-photo-1.jpg"
+              alt="Person is typing code on PC and with addiitional smaller screen in front of them. Next to they on the left side lies a debugging scheme and on the right side there are glasses and notepad. Scene is illuminated with blue and red contra-light."
+              width="370"
+              height="294"
+            />
+          </li>
+          <li>
+            <div class="service flex-center">Aplikacje mobilne</div>
+            <img
+              src="images/programming-photo-2.jpg"
+              alt="Person is sitting at the laptop with phone in hand on the left side there is second, bigger screen. The screens an overview of the page or application layout for the phone. Scene is illuminated with blue and red contra-light. "
+              width="370"
+              height="294"
+            />
+          </li>
+          <li>
+            <div class="service flex-center">Rozwiązania graficzne</div>
+            <img
+              src="images/programming-photo-3.jpg"
+              alt=" Person is holding a tablet next to PC. Screen shows HTML color picker. Desk is dark grayish but mouse, keyboard and scren are white  Scene is illuminated with day light "
+              width="370"
+              height="294"
+            />
+          </li>
+        </ul>
+      </section>
+
+      <section class="our-team">
+        <h2>Nasz zespół</h2>
+
+        <ul class="team-members flex-center">
+          <li>
+            <div class="team-member">
+              <img
+                src="images/john-doe-1.jpg"
+                alt=" Portrait of man smiling man with short, dark-brown hair and beard, he is standing on white background. Man is wearing glasses and a brown shirt."
+                width="270"
+                height="260"
+              />
+              <h3>John Doe</h3>
+              <p>Product Designer</p>
+              <ul>
+                <li class="flex-center">
+                  <svg class="icon icon-instagram">
+                    <use href="images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </li>
+                <li class="flex-center">
+                  <svg class="icon icon-twitter">
+                    <use href="images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </li>
+                <li class="flex-center">
+                  <svg class="icon icon-facebook">
+                    <use href="images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </li>
+                <li class="flex-center">
+                  <svg class="icon icon-linkedin">
+                    <use href="images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div class="team-member">
+              <img
+                src="images/john-doe-2.jpg"
+                alt="Portrait of woman smiling with long, blonde hair, she is standing on white background. Woman is wearing glasses and a black suit"
+                width="270"
+                height="260"
+              />
+              <h3>John Doe</h3>
+              <p>Frontend Developer</p>
+              <ul>
+                <li class="flex-center">
+                  <svg class="icon icon-instagram">
+                    <use href="images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </li>
+                <li class="flex-center">
+                  <svg class="icon icon-twitter">
+                    <use href="images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </li>
+                <li class="flex-center">
+                  <svg class="icon icon-facebook">
+                    <use href="images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </li>
+                <li class="flex-center">
+                  <svg class="icon icon-linkedin">
+                    <use href="images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div class="team-member">
+              <img
+                src="images/john-doe-3.jpg"
+                alt="Portrait of man smiling with short, light-brown hair and short beard, he is standing on white background. Man is wearing a light-blue shirt."
+                width="270"
+                height="260"
+              />
+              <h3>John Doe</h3>
+              <p>Marketing</p>
+              <ul>
+                <li class="flex-center">
+                  <svg class="icon icon-instagram">
+                    <use href="images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </li>
+                <li class="flex-center">
+                  <svg class="icon icon-twitter">
+                    <use href="images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </li>
+                <li class="flex-center">
+                  <svg class="icon icon-facebook">
+                    <use href="images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </li>
+                <li class="flex-center">
+                  <svg class="icon icon-linkedin">
+                    <use href="images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div class="team-member">
+              <img
+                src="images/john-doe-4.jpg"
+                alt="Portrait of man smiling with short, black hair and beard, he is standing on outside background. Man is wearing glasses and a black t-shirt."
+                width="270"
+                height="260"
+              />
+              <h3>John Doe</h3>
+              <p>UI Designer</p>
+              <ul>
+                <li class="flex-center">
+                  <svg class="icon icon-instagram">
+                    <use href="images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </li>
+                <li class="flex-center">
+                  <svg class="icon icon-twitter">
+                    <use href="images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </li>
+                <li class="flex-center">
+                  <svg class="icon icon-facebook">
+                    <use href="images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </li>
+                <li class="flex-center">
+                  <svg class="icon icon-linkedin">
+                    <use href="images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="our-clients">
+        <h2>Nasi klienci</h2>
+        <ul class="clients flex-center">
+          <li class="client flex-center">
+            <svg class="icon icon-company-1">
+              <use href="images/icons.svg#icon-company-1"></use>
+            </svg>
+          </li>
+          <li class="client flex-center">
+            <svg class="icon icon-company-2">
+              <use href="images/icons.svg#icon-company-2"></use>
+            </svg>
+          </li>
+          <li class="client flex-center">
+            <svg class="icon icon-company-3">
+              <use href="images/icons.svg#icon-company-3"></use>
+            </svg>
+          </li>
+          <li class="client flex-center">
+            <svg class="icon icon-company-4">
+              <use href="images/icons.svg#icon-company-4"></use>
+            </svg>
+          </li>
+          <li class="client flex-center">
+            <svg class="icon icon-company-5">
+              <use href="images/icons.svg#icon-company-5"></use>
+            </svg>
+          </li>
+          <li class="client flex-center">
+            <svg class="icon icon-company-6">
+              <use href="images/icons.svg#icon-company-6"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <!--Footer section with logos and contact-->
+
+      <section class="contact-footer">
+        <a class="logo"><span>Web</span>Studio</a>
+        <address class="footer-adress">m. Warszawa, Aleje Jerozolimskie 21</address>
+        <a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
+        <a class="footer-phone" href="tel:+48111111111">+48 111 111 111</a>
+      </section>
+
+      <!--Footer section with social icons/links-->
+
+      <section class="join-us">
+        <h3>dołącz do nas</h3>
+        <ul class="footer-social">
+          <li class="flex-center">
+            <svg class="icon icon-instagram">
+              <use href="images/icons.svg#icon-instagram"></use>
+            </svg>
+          </li>
+          <li class="flex-center">
+            <svg class="icon icon-instagram">
+              <use href="images/icons.svg#icon-twitter"></use>
+            </svg>
+          </li>
+          <li class="flex-center">
+            <svg class="icon icon-facebook">
+              <use href="images/icons.svg#icon-facebook"></use>
+            </svg>
+          </li>
+          <li class="flex-center">
+            <svg class="icon icon-linkedin">
+              <use href="images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+
+      <section class="newsletter">
+        <h3>Zapisz się do newslettera</h3>
+        <form>
+          <input
+            type="email"
+            name="newsletter-email"
+            placeholder="E-mail"
+            class="newsletter-email"
+          />
+          <input
+            type="submit"
+            name="newsletter-sumbit"
+            value="Zapisz się     "
+            class="newsletter-submit"
+          /><svg class="icon icon-send">
+            <use xlink:href="images/icons.svg#icon-send"></use>
+          </svg>
+        </form>
+      </section>
+    </footer>
+
+    <script src="js/modal.js"></script>
+  </body>
+</html>
