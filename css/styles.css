@@ -1009,23 +1009,23 @@ body {
   margin: 0;
 }
 .contact-cbox {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #fff; /* For iOS < 15 */
-  margin: 0;
-  font: inherit;
-  color: currentColor;
   width: 1.15em;
   height: 1.15em;
-  border: 0.15em solid currentColor;
-  border-radius: 0.15em;
-  transform: translateY(-0.075em);
-  margin-right: 0.438rem;
-  width: 1.143em;
-  height: 1.072em;
   display: grid;
   place-content: center;
-  background-color: 2px solid green;
+  margin: 0;
+  margin-right: 0.438rem;
+  appearance: none;
+  -webkit-appearance: none;
+  transform: translateY(-0.075em);
+
+  font: inherit;
+  color: currentColor;
+
+  background-color: #fff; /* For iOS < 15 */
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+
   cursor: pointer;
 }
 .contact-cbox:checked {
@@ -1081,6 +1081,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: transform 500ms ease-out, box-shadow 500ms ease-out;
+  cursor: pointer;
 }
 .contact-submit:hover,
 .contact-submit:focus {
