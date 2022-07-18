@@ -41,92 +41,40 @@
   stroke-width: 0;
 }
 
-.icon-antenna-1 {
-  width: 4.375rem;
-  height: 4.375rem;
-  background-position: 0 0;
-}
-.icon-clock-1 {
-  width: 4.375rem;
-  height: 4.375rem;
-  background-position: -96px 0;
-}
-.icon-diagram-1 {
-  width: 4.375rem;
-  height: 4.375rem;
-  background-position: -432px 0;
-}
+.icon-antenna-1,
+.icon-clock-1,
+.icon-diagram-1,
 .icon-astronaut-1 {
   width: 4.375rem;
   height: 4.375rem;
-  background-position: -48px 0;
 }
 
 .icon-company-1 {
   width: 4rem;
   height: 4rem;
-  background-position: -144px 0;
 }
-.icon-company-2 {
-  width: 4.5rem;
-  height: 4.5rem;
-  background-position: -192px 0;
-}
-.icon-company-3 {
-  width: 5rem;
-  height: 5rem;
-  background-position: -240px 0;
-}
-.icon-company-4 {
-  width: 5.5rem;
-  height: 5.5rem;
-  background-position: -288px 0;
-}
-.icon-company-5 {
-  width: 5rem;
-  height: 5rem;
-  background-position: -336px 0;
-}
+.icon-company-2,
+.icon-company-3,
+.icon-company-4,
+.icon-company-5,
 .icon-company-6 {
-  width: 6.5rem;
-  height: 6.5rem;
-  background-position: -384px 0;
+  width: 5rem;
+  height: 5rem;
 }
 
-.icon-instagram {
-  width: 1.25rem;
-  height: 1.25rem;
-  background-position: -624px 0;
-}
-.icon-twitter {
-  width: 1.25rem;
-  height: 1.25rem;
-  background-position: 0 -48px;
-}
-.icon-facebook {
-  width: 1.25rem;
-  height: 1.25rem;
-  background-position: -576px 0;
-}
+.icon-instagram,
+.icon-twitter,
+.icon-facebook,
 .icon-linkedin {
   width: 1.25rem;
   height: 1.25rem;
-  background-position: -672px 0;
 }
 
-.icon-envelope {
-  width: 1.332em;
-  height: 1.332em;
-  vertical-align: bottom;
-
-  background-position: -480px 0;
-}
-
+.icon-envelope,
 .icon-smartphone {
-  width: 1.321em;
-  height: 1.321em;
+  width: 1.331em;
+  height: 1.331em;
   vertical-align: bottom;
-  background-position: -720px 0;
 }
 
 /*-----------------------------*/
@@ -157,7 +105,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 88px;
+  height: 5rem;
 
   border-bottom: 1px solid #ececec;
 
@@ -291,7 +239,7 @@ body {
   font-weight: var(--fw-blck);
   text-align: center;
   letter-spacing: 0.06em;
-  line-height: 1.36em;
+  line-height: 3.75rem;
 
   background-image: url('../images/header-img.jpg');
 }
@@ -424,7 +372,7 @@ body {
 
   color: #fff;
   font-weight: var(--fw-bld);
-  line-height: 16.41px;
+  line-height: 1.026rem;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -447,18 +395,24 @@ body {
 }
 .our-team > h2 {
   margin-block: 5.875rem 3.125rem;
+
   font-size: 36px;
   font-weight: var(--fw-bld);
+  line-height: 2.625rem;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .team-members {
+  margin: 0;
   flex-wrap: wrap;
-  column-gap: 2.143rem;
+  column-gap: 1.875rem;
 
   list-style: none;
 }
 .team-member {
   margin-bottom: 5.875rem;
+  height: 428px;
 
   background-color: var(--clr-background);
 
@@ -468,14 +422,23 @@ body {
   border-bottom-right-radius: 4px;
 }
 .team-member > h3 {
+  margin-block: 1.875rem 0.625rem;
+
+  text-align: center;
   font-size: 16px;
   font-weight: var(--fw-med);
+  line-height: 1.188rem;
+  letter-spacing: 0.03em;
 }
 .team-member > p {
+  margin: 0;
   padding-bottom: 1rem;
 
   color: var(--clr-font-lght);
+  text-align: center;
   font-size: 16px;
+  line-height: 1.188rem;
+  letter-spacing: 0.03em;
 }
 .team-member > ul {
   display: flex;
@@ -507,13 +470,13 @@ body {
 
 .clients {
   flex-wrap: wrap;
-  gap: 1.7rem;
+  gap: 1.875rem;
   padding: 0;
 
   list-style: none;
 }
 .our-clients > h2 {
-  margin-top: 5.875rem;
+  margin-block: 5.875rem 3.125rem;
 
   text-align: center;
   font-size: 36px;
@@ -563,9 +526,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-.contact-footer > * {
-  margin-left: 215px;
 }
 .contact-footer > .logo {
   margin-block: 3.75rem 1.25rem;
@@ -632,7 +592,7 @@ body {
 
   font-weight: var(--fw-bld);
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1rem;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
