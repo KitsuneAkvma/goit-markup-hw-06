@@ -454,6 +454,7 @@ body {
   height: 2.75rem;
   margin-bottom: 2.143rem;
 
+  fill: var(--clr-font-lght);
   border-radius: 50%;
 
   cursor: pointer;
